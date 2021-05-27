@@ -3,6 +3,7 @@ package com.kvelinskyi.ua.adapter;
 /**
  * @author Igor Kvelinskyi (igorkvjava@gmail.com)
  */
+//Adapter
 public class Adapter implements ClientInterface {
     AmericanSocket americanSocket;
 
@@ -12,7 +13,11 @@ public class Adapter implements ClientInterface {
 
     @Override
     public void getPower() {
-        System.out.println("Start Adapter connect americanSocket with ClientInterface getPower()");
         americanSocket.getPower();
+        System.out.println("Adapter connect americanSocket with ClientInterface getPower()");
     }
+
+
+
+
 }
